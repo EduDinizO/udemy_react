@@ -1,0 +1,81 @@
+// BASIC RESET
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+*,
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after,
+p::after,
+ul::after,
+*::after,
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before,
+p::before,
+ul::before,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+*:active,
+*:focus {
+    outline: none !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+}
+
+html {
+    @include respond(big-desk) {
+        // 1440px < width
+        font-size: 106.25%; // 1rem = 17px
+    }
+    @include respond(med-desk) {
+        // 1200px < width < 1439.98px
+        font-size: 100%; // 1rem = 16px
+    }
+    @include respond(desk) {
+        // 992px < width < 1199.98px
+        font-size: 93.75%; // 1rem = 15px
+    }
+    @include respond(tab-land) {
+        // 768px < width < 991.98px
+        font-size: 87.5%; // 1rem = 14px
+    }
+    @include respond(tab-port) {
+        // 576 width < 767.98px
+        font-size: 81.3%; // 1rem = 16 x 0.813 = 13px
+    }
+    @include respond(phone) {
+        // width > 575.98px
+        font-size: 75%; // 1rem = 16 x 0.75 = 12px
+    }
+
+    &::-webkit-scrollbar {
+        //width: 0.4rem;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        //background: $color-grey;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        //background: $color-yellow;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        //background: darken($color-yellow, 20%);
+    }
+}
