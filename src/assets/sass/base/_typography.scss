@@ -1,10 +1,16 @@
 @font-face {
-    //font-family: openSansBold;
-    //src: url(assets/fonts/openSans/OpenSans-Bold.ttf) format("opentype");
+    font-family: openSansRegular;
+    src: url(./assets/fonts/OpenSans-Regular.ttf) format("opentype");
 }
 
+@font-face {
+    font-family: openSansBold;
+    src: url(./assets/fonts/OpenSans-Bold.ttf) format("opentype");
+}
+
+
 body {
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-family: openSansRegular, 'Arial Narrow', Arial, sans-serif;
     font-weight: 300;
     line-height: 1;
     color: $color-black;
