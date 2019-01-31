@@ -1,7 +1,7 @@
 .burger {
     width: 100%;
     margin: auto;
-    height: 20rem;
+    height: 30rem;
     text-align: center;
     overflow: auto;
     font-weight: bold;
@@ -9,7 +9,7 @@
 
     &__bread {
         &--bottom {
-            height: 13%;
+            height: 3rem;
             width: 80%;
             background: linear-gradient(#F08E4A, #e27b36);
             border-radius: 0 0 1.5rem 1.5rem;
@@ -17,7 +17,7 @@
             margin: 2% auto;
         }
         &--top {
-            height: 20%;
+            height: 3.5rem;
             width: 80%;
             background: linear-gradient(#bc581e, #e27b36);
             border-radius: 50% 50% 0 0;
@@ -90,7 +90,7 @@
 
     &__meat {
         width: 80%;
-        height: 8%;
+        height: 2rem;
         background: linear-gradient(#7f3608, #702e05);
         margin: 2% auto;
         border-radius: 1rem;
@@ -98,7 +98,7 @@
 
     &__cheese {
         width: 90%;
-        height: 4.5%;
+        height: 1rem;
         margin: 2% auto;
         background: linear-gradient(#f4d004, #d6bb22);
         border-radius: 1.2rem;
@@ -106,7 +106,7 @@
 
     &__salad {
         width: 85%;
-        height: 7%;
+        height: 0.7rem;
         margin: 2% auto;
         background: linear-gradient(#228c1d, #91ce50);
         border-radius: 1.2rem;
@@ -114,7 +114,7 @@
 
     &__bacon {
         width: 80%;
-        height: 3%;
+        height: 0.5rem;
         background: linear-gradient(#bf3813, #c45e38);
         margin: 2% auto;
     }
