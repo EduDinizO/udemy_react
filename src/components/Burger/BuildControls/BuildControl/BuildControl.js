@@ -5,10 +5,15 @@ const buildControl = props => (
         <div className='build-control__label'>
             {props.label}
         </div>
-        <button className='build-control__less'>
+        <button className='build-control__less'
+                onClick={props.removed}
+                disabled={props.disabled}
+        >
             Less
         </button>
-        <button className='build-control__more'>
+        <button className='build-control__more'
+                onClick={props.added}
+        >
             More
         </button>
     </div>

@@ -7,14 +7,14 @@ import Col from 'react-bootstrap/Col';
 const layout = props => {
     return (
         <Container fluid={true} className='p-0'>
-            <Row className='py-3'>
+            <Row className='py-3 no-gutters'>
                 <Col>
                     <div>
                         Toolbar, SideDrawer, Backdrop
                     </div>
                 </Col>
             </Row>
-            <Row>
+            <Row className='no-gutters'>
                 <Col>
                     {props.children}
                 </Col>
