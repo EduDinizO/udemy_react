@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 const layout = props => {
     return (
-        <Container fluid={true}>
+        <Container fluid={true} className='p-0'>
             <Row className='py-3'>
                 <Col>
                     <div>
@@ -15,13 +15,9 @@ const layout = props => {
                 </Col>
             </Row>
             <Row>
-                <Container>
-                    <Row>
-                        <Col xs={12}>
-                            {props.children}
-                        </Col>
-                    </Row>
-                </Container>
+                <Col>
+                    {props.children}
+                </Col>
             </Row>
         </Container>
     )

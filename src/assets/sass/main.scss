@@ -10,8 +10,10 @@
 @import 'base/utilities';
 // COMPONENTS
 @import 'components/buttons';
+@import 'components/build_control';
+@import 'components/build_controls';
+@import 'components/burger';
 // LAYOUT
-@import 'layouts/burger';
 @import 'layouts/header';
 @import 'layouts/footer';
 @import 'layouts/form';
